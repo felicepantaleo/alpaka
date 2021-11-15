@@ -28,6 +28,7 @@
 #include <alpaka/acc/AccOmp5.hpp>
 #include <alpaka/acc/Traits.hpp>
 // atomic
+#include <alpaka/atomic/AtomicAtomicRef.hpp>
 #include <alpaka/atomic/AtomicNoOp.hpp>
 #include <alpaka/atomic/AtomicOmpBuiltIn.hpp>
 #include <alpaka/atomic/AtomicStdLibLock.hpp>
