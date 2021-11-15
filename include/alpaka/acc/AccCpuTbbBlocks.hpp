@@ -12,6 +12,7 @@
 #ifdef ALPAKA_ACC_CPU_B_TBB_T_SEQ_ENABLED
 
 // Base classes.
+#    include <alpaka/atomic/AtomicAtomicRef.hpp>
 #    include <alpaka/atomic/AtomicHierarchy.hpp>
 #    include <alpaka/atomic/AtomicNoOp.hpp>
 #    include <alpaka/atomic/AtomicStdLibLock.hpp>
@@ -57,8 +58,8 @@ namespace alpaka
         public gb::IdxGbRef<TDim, TIdx>,
         public bt::IdxBtZero<TDim, TIdx>,
         public AtomicHierarchy<
-            AtomicStdLibLock<16>, // grid atomics
-            AtomicStdLibLock<16>, // block atomics
+            AtomicAtomicRef, // grid atomics
+            AtomicAtomicRef, // block atomics
             AtomicNoOp         // thread atomics
         >,
         public math::MathStdLib,
@@ -88,8 +89,8 @@ namespace alpaka
             , gb::IdxGbRef<TDim, TIdx>(m_gridBlockIdx)
             , bt::IdxBtZero<TDim, TIdx>()
             , AtomicHierarchy<
-                  AtomicStdLibLock<16>, // atomics between grids
-                  AtomicStdLibLock<16>, // atomics between blocks
+                  AtomicAtomicRef, // atomics between grids
+                  AtomicAtomicRef, // atomics between blocks
                   AtomicNoOp // atomics between threads
                   >()
             , math::MathStdLib()
