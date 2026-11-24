@@ -1,0 +1,2527 @@
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:510:5: note: in instantiation of function template specialization 'run<K00_EngCtorNoOffset, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  510 |     run("K00_EngCtorNoOffset", K00_EngCtorNoOffset{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:511:5: note: in instantiation of function template specialization 'run<K01_EngCtor, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  511 |     run("K01_EngCtor", K01_EngCtor{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:512:5: note: in instantiation of function template specialization 'run<K02_EngCtorVar, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  512 |     run("K02_EngCtorVar", K02_EngCtorVar{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:513:5: note: in instantiation of function template specialization 'run<K03_EngUint32, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  513 |     run("K03_EngUint32", K03_EngUint32{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:514:5: note: in instantiation of function template specialization 'run<K04_EngUint64, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  514 |     run("K04_EngUint64", K04_EngUint64{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:515:5: note: in instantiation of function template specialization 'run<K05_EngSkip, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  515 |     run("K05_EngSkip", K05_EngSkip{}, queue, dev, s, 1);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:518:5: note: in instantiation of function template specialization 'run<K06_TraitRealF, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  518 |     run("K06_TraitRealF", K06_TraitRealF{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:519:5: note: in instantiation of function template specialization 'run<K07_TraitRealD, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  519 |     run("K07_TraitRealD", K07_TraitRealD{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:520:5: note: in instantiation of function template specialization 'run<K08_TraitNormF, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  520 |     run("K08_TraitNormF", K08_TraitNormF{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:521:5: note: in instantiation of function template specialization 'run<K09_PhiloxRealF, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  521 |     run("K09_PhiloxRealF", K09_PhiloxRealF{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:522:5: note: in instantiation of function template specialization 'run<K10_PhiloxRealD, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  522 |     run("K10_PhiloxRealD", K10_PhiloxRealD{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:523:5: note: in instantiation of function template specialization 'run<K11_PhiloxRealFRange, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  523 |     run("K11_PhiloxRealFRange", K11_PhiloxRealFRange{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:524:5: note: in instantiation of function template specialization 'run<K12_VecCtor, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  524 |     run("K12_VecCtor", K12_VecCtor{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:525:5: note: in instantiation of function template specialization 'run<K13_VecUint32, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  525 |     run("K13_VecUint32", K13_VecUint32{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:526:5: note: in instantiation of function template specialization 'run<K14_VecRealF, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  526 |     run("K14_VecRealF", K14_VecRealF{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:527:5: note: in instantiation of function template specialization 'run<K15_VecRealD, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  527 |     run("K15_VecRealD", K15_VecRealD{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:528:5: note: in instantiation of function template specialization 'run<K16_VecSkip64, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  528 |     run("K16_VecSkip64", K16_VecSkip64{}, queue, dev, s, 5);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:529:5: note: in instantiation of function template specialization 'run<K17_EngUint32NoOffset, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  529 |     run("K17_EngUint32NoOffset", K17_EngUint32NoOffset{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+In file included from REPRO_DIR/bench.cpp:5:
+In file included from RESULT_DIR/src/head/include/alpaka/alpaka.hpp:145:
+In file included from RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuCudaRt.hpp:8:
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI19K00_EngCtorNoOffsetNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+   68 |         {
+      | ^
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 33 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 26 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI11K01_EngCtorNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 18 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI14K02_EngCtorVarNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 20 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 20 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI13K03_EngUint32NS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 20 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI13K04_EngUint64NS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 24 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI11K05_EngSkipNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 26 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI14K06_TraitRealFNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 20 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI14K07_TraitRealDNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 24 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI14K08_TraitNormFNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 42 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 42 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI15K09_PhiloxRealFNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 23 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI15K10_PhiloxRealDNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 23 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 24 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI20K11_PhiloxRealFRangeNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 25 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 24 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI11K12_VecCtorNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 21 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 18 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI13K13_VecUint32NS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 21 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 20 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI12K14_VecRealFNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 20 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI12K15_VecRealDNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI13K16_VecSkip64NS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 21 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark: Function Name: _ZN6alpaka6detail9gpuKernelI21K17_EngUint32NoOffsetNS_22AccGpuUniformCudaHipRtINS_8ApiHipRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_ [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     TotalSGPRs: 21 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs: 22 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     AGPRs: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     ScratchSize [bytes/lane]: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Dynamic Stack: False [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     Occupancy [waves/SIMD]: 8 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     SGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     VGPRs Spill: 0 [-Rpass-analysis=kernel-resource-usage]
+RESULT_DIR/src/head/include/alpaka/kernel/TaskKernelGpuUniformCudaHipRt.hpp:68:1: remark:     LDS Size [bytes/block]: 0 [-Rpass-analysis=kernel-resource-usage]
+186 warnings generated when compiling for gfx90a.
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:510:5: note: in instantiation of function template specialization 'run<K00_EngCtorNoOffset, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  510 |     run("K00_EngCtorNoOffset", K00_EngCtorNoOffset{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:511:5: note: in instantiation of function template specialization 'run<K01_EngCtor, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  511 |     run("K01_EngCtor", K01_EngCtor{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:512:5: note: in instantiation of function template specialization 'run<K02_EngCtorVar, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  512 |     run("K02_EngCtorVar", K02_EngCtorVar{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:513:5: note: in instantiation of function template specialization 'run<K03_EngUint32, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  513 |     run("K03_EngUint32", K03_EngUint32{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:514:5: note: in instantiation of function template specialization 'run<K04_EngUint64, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  514 |     run("K04_EngUint64", K04_EngUint64{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:515:5: note: in instantiation of function template specialization 'run<K05_EngSkip, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  515 |     run("K05_EngSkip", K05_EngSkip{}, queue, dev, s, 1);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:518:5: note: in instantiation of function template specialization 'run<K06_TraitRealF, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  518 |     run("K06_TraitRealF", K06_TraitRealF{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:519:5: note: in instantiation of function template specialization 'run<K07_TraitRealD, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  519 |     run("K07_TraitRealD", K07_TraitRealD{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:520:5: note: in instantiation of function template specialization 'run<K08_TraitNormF, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  520 |     run("K08_TraitNormF", K08_TraitNormF{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:521:5: note: in instantiation of function template specialization 'run<K09_PhiloxRealF, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  521 |     run("K09_PhiloxRealF", K09_PhiloxRealF{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:522:5: note: in instantiation of function template specialization 'run<K10_PhiloxRealD, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  522 |     run("K10_PhiloxRealD", K10_PhiloxRealD{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:523:5: note: in instantiation of function template specialization 'run<K11_PhiloxRealFRange, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  523 |     run("K11_PhiloxRealFRange", K11_PhiloxRealFRange{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:524:5: note: in instantiation of function template specialization 'run<K12_VecCtor, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  524 |     run("K12_VecCtor", K12_VecCtor{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:525:5: note: in instantiation of function template specialization 'run<K13_VecUint32, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  525 |     run("K13_VecUint32", K13_VecUint32{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:526:5: note: in instantiation of function template specialization 'run<K14_VecRealF, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  526 |     run("K14_VecRealF", K14_VecRealF{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:527:5: note: in instantiation of function template specialization 'run<K15_VecRealD, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  527 |     run("K15_VecRealD", K15_VecRealD{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:528:5: note: in instantiation of function template specialization 'run<K16_VecSkip64, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  528 |     run("K16_VecSkip64", K16_VecSkip64{}, queue, dev, s, 5);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:437:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  437 |     GPU_EVENT_CREATE(&start);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:529:5: note: in instantiation of function template specialization 'run<K17_EngUint32NoOffset, alpaka::uniform_cuda_hip::detail::QueueUniformCudaHipRt<alpaka::ApiHipRt, false>, alpaka::DevUniformCudaHipRt<alpaka::ApiHipRt>>' requested here
+  529 |     run("K17_EngUint32NoOffset", K17_EngUint32NoOffset{}, queue, dev, s, 0);
+      |     ^
+REPRO_DIR/bench.cpp:438:5: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  438 |     GPU_EVENT_CREATE(&stop);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:25:30: note: expanded from macro 'GPU_EVENT_CREATE'
+   25 | #    define GPU_EVENT_CREATE hipEventCreate
+      |                              ^
+REPRO_DIR/bench.cpp:444:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  444 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:446:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  446 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:447:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  447 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:449:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  449 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+REPRO_DIR/bench.cpp:454:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  454 |         GPU_EVENT_RECORD(start, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:456:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  456 |         GPU_EVENT_RECORD(stop, stream);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:26:30: note: expanded from macro 'GPU_EVENT_RECORD'
+   26 | #    define GPU_EVENT_RECORD hipEventRecord
+      |                              ^
+REPRO_DIR/bench.cpp:457:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  457 |         GPU_EVENT_SYNC(stop);
+      |         ^~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:27:28: note: expanded from macro 'GPU_EVENT_SYNC'
+   27 | #    define GPU_EVENT_SYNC hipEventSynchronize
+      |                            ^
+REPRO_DIR/bench.cpp:459:9: warning: ignoring return value of type 'hipError_t' declared with 'nodiscard' attribute [-Wunused-value]
+  459 |         GPU_EVENT_ELAPSED(&ms, start, stop);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+REPRO_DIR/bench.cpp:28:31: note: expanded from macro 'GPU_EVENT_ELAPSED'
+   28 | #    define GPU_EVENT_ELAPSED hipEventElapsedTime
+      |                               ^
+186 warnings generated when compiling for host.

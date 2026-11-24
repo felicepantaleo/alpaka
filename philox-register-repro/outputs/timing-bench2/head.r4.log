@@ -1,0 +1,12 @@
+device=Tesla T4 threads=1048576 draws=1024 offset=6
+R0_RealFRange(1.5,4)       k=0    median_ms=   8.7529 min_ms=   8.5791 max_ms=   8.8258 launches=21 checksum=29528299894736
+R0_RealFRange(0,1)         k=0    median_ms=   7.7929 min_ms=   7.5892 max_ms=   7.9357 launches=21 checksum=5368868752183
+R1_RealDRange(1.5,4)       k=0    median_ms=  49.4755 min_ms=  49.4569 max_ms=  49.5039 launches=21 checksum=29528300167020
+R1_RealDRange(0,1)         k=0    median_ms=  20.2225 min_ms=  20.2207 max_ms=  20.2251 launches=21 checksum=5368868808138
+R2_VecRealFRange(1.5,4)    k=0    median_ms=   6.5514 min_ms=   6.3792 max_ms=   6.6920 launches=21 checksum=29528222414742
+R2_VecRealFRange(0,1)      k=0    median_ms=   5.7160 min_ms=   5.6191 max_ms=   5.7283 launches=21 checksum=5368837764076
+R3_VecRealDRange(1.5,4)    k=0    median_ms=  49.4840 min_ms=  49.4594 max_ms=  49.5046 launches=21 checksum=29528222699615
+R3_VecRealDRange(0,1)      k=0    median_ms=  22.0508 min_ms=  22.0406 max_ms=  22.0631 launches=21 checksum=5368837821570
+R4_VecRealDUnit            k=0    median_ms=  22.0254 min_ms=  22.0101 max_ms=  22.0384 launches=21 checksum=5368837821570
+R5_RealFMember             k=0    median_ms=   7.7315 min_ms=   7.6284 max_ms=   7.9094 launches=21 checksum=5368868752183
+R6_VecRealDMember          k=0    median_ms=  22.0570 min_ms=  22.0462 max_ms=  22.0708 launches=21 checksum=5368837821570

@@ -1,0 +1,47 @@
+
+Fatbin elf code:
+================
+arch = sm_80
+code version = [1,8]
+host = linux
+compile_size = 64bit
+
+Resource usage:
+ Common:
+  GLOBAL:1 CONSTANT[4]:8
+ Function _ZN6alpaka6detail9gpuKernelI21K17_EngUint32NoOffsetNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI13K16_VecSkip64NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:21 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI12K15_VecRealDNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:24 STACK:0 SHARED:0 LOCAL:0 CONSTANT[2]:8 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI12K14_VecRealFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:19 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI13K13_VecUint32NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:18 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI11K12_VecCtorNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:17 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI20K11_PhiloxRealFRangeNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI15K10_PhiloxRealDNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:32 STACK:0 SHARED:0 LOCAL:0 CONSTANT[2]:8 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI15K09_PhiloxRealFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI14K08_TraitNormFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:32 STACK:32 SHARED:0 LOCAL:0 CONSTANT[2]:8 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI14K07_TraitRealDNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:24 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI14K06_TraitRealFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI11K05_EngSkipNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:21 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI13K04_EngUint64NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:22 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI13K03_EngUint32NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI14K02_EngCtorVarNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI11K01_EngCtorNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0
+ Function _ZN6alpaka6detail9gpuKernelI19K00_EngCtorNoOffsetNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_:
+  REG:20 STACK:0 SHARED:0 LOCAL:0 CONSTANT[0]:392 TEXTURE:0 SURFACE:0 SAMPLER:0

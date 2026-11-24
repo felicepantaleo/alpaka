@@ -1,0 +1,91 @@
+ptxas info    : 1 bytes gmem
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI21K17_EngUint32NoOffsetNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI21K17_EngUint32NoOffsetNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 0 barriers
+ptxas info    : Compile time = 8.446 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI13K16_VecSkip64NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI13K16_VecSkip64NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 22 registers, used 0 barriers
+ptxas info    : Compile time = 5.445 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI12K15_VecRealDNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI12K15_VecRealDNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, used 0 barriers
+ptxas info    : Compile time = 5.202 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI12K14_VecRealFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI12K14_VecRealFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 0 barriers
+ptxas info    : Compile time = 5.011 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI13K13_VecUint32NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI13K13_VecUint32NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 0 barriers
+ptxas info    : Compile time = 4.418 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI11K12_VecCtorNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI11K12_VecCtorNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 0 barriers
+ptxas info    : Compile time = 3.857 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI20K11_PhiloxRealFRangeNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI20K11_PhiloxRealFRangeNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 28 registers, used 0 barriers
+ptxas info    : Compile time = 11.102 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI15K10_PhiloxRealDNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI15K10_PhiloxRealDNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, used 0 barriers
+ptxas info    : Compile time = 10.274 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI15K09_PhiloxRealFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI15K09_PhiloxRealFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 26 registers, used 0 barriers
+ptxas info    : Compile time = 10.247 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI14K08_TraitNormFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI14K08_TraitNormFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    32 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 32 registers, used 0 barriers, 32 bytes cumulative stack size
+ptxas info    : Compile time = 25.858 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI14K07_TraitRealDNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI14K07_TraitRealDNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 30 registers, used 0 barriers
+ptxas info    : Compile time = 13.583 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI14K06_TraitRealFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI14K06_TraitRealFNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 26 registers, used 0 barriers
+ptxas info    : Compile time = 10.109 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI11K05_EngSkipNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI11K05_EngSkipNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 20 registers, used 0 barriers
+ptxas info    : Compile time = 16.916 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI13K04_EngUint64NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI13K04_EngUint64NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 28 registers, used 0 barriers
+ptxas info    : Compile time = 12.562 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI13K03_EngUint32NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI13K03_EngUint32NS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 26 registers, used 0 barriers
+ptxas info    : Compile time = 9.967 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI14K02_EngCtorVarNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI14K02_EngCtorVarNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 24 registers, used 0 barriers
+ptxas info    : Compile time = 7.678 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI11K01_EngCtorNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI11K01_EngCtorNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 23 registers, used 0 barriers
+ptxas info    : Compile time = 7.499 ms
+ptxas info    : Compiling entry function '_ZN6alpaka6detail9gpuKernelI19K00_EngCtorNoOffsetNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_' for 'sm_90'
+ptxas info    : Function properties for _ZN6alpaka6detail9gpuKernelI19K00_EngCtorNoOffsetNS_22AccGpuUniformCudaHipRtINS_9ApiCudaRtESt17integral_constantImLm1EEjEEJPjjjjjffEEEvNS_3VecINS_5trait7DimTypeIT0_vE4typeENSA_7IdxTypeISC_vE4typeEEET_DpT1_
+    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads
+ptxas info    : Used 18 registers, used 0 barriers
+ptxas info    : Compile time = 3.197 ms

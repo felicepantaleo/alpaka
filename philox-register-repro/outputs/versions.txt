@@ -1,0 +1,13 @@
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2026 NVIDIA Corporation
+Built on Tue_Sep_01_08:45:21_PDT_2026
+Cuda compilation tools, release 13.4, V13.4.92
+Build cuda_13.4.r13.4/compiler.38855100_0
+g++ (GCC) 14.3.1 20250602
+sh: /cvmfs/cms.cern.ch/el8_amd64_gcc14/external/rocm-llvm/7.14-7f80ee39e9b6f1b378d8f90f45873589/bin/rocm_agent_enumerator: No such file or directory
+HIP version: 7.14.60850-0000000
+AMD clang version 23.0.0git
+Target: x86_64-redhat-linux-gnu
+index, name, driver_version
+0, Tesla T4, 580.178.04
+1, Tesla T4, 580.178.04

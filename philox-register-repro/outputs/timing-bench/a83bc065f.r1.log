@@ -1,0 +1,21 @@
+device=Tesla T4 threads=1048576 draws=1024 offset=6 warmup_ms=300 launches=21
+K00_EngCtorNoOffset    k=0    median_ms=  18.1924 min_ms=  18.0552 max_ms=  18.3927 launches=21 checksum=2251950801876226
+K01_EngCtor            k=0    median_ms=  23.3877 min_ms=  23.1735 max_ms=  23.6818 launches=21 checksum=2251886759865277
+K02_EngCtorVar         k=0    median_ms=  28.8699 min_ms=  28.5874 max_ms=  29.2971 launches=21 checksum=2252338271798238
+K03_EngUint32          k=0    median_ms=   6.9571 min_ms=   6.9531 max_ms=   7.0873 launches=21 checksum=2251886759865277
+K04_EngUint64          k=0    median_ms=  12.9660 min_ms=  12.8041 max_ms=  13.2155 launches=21 checksum=2252296363071432
+K05_EngSkip            k=1    median_ms=  17.2486 min_ms=  17.0765 max_ms=  17.4672 launches=21 checksum=2253122801348779
+K05_EngSkip            k=3    median_ms=  29.6182 min_ms=  29.6148 max_ms=  29.6223 launches=21 checksum=2251553629971218
+K05_EngSkip            k=7    median_ms=  29.6178 min_ms=  29.6159 max_ms=  29.6215 launches=21 checksum=2249757585536199
+K06_TraitRealF         k=0    median_ms=   7.5972 min_ms=   7.5937 max_ms=   7.7488 launches=21 checksum=5368784821239
+K07_TraitRealD         k=0    median_ms=  22.0164 min_ms=  21.7825 max_ms=  22.2556 launches=21 checksum=5368702932661
+K08_TraitNormF         k=0    median_ms=  20.5681 min_ms=  20.3100 max_ms=  20.9962 launches=21 checksum=2253831205324199
+K09_PhiloxRealF        k=0    median_ms=   8.1162 min_ms=   7.9520 max_ms=   8.1647 launches=21 checksum=5368868752183
+K10_PhiloxRealD        k=0    median_ms=  39.7731 min_ms=  39.7520 max_ms=  39.8129 launches=21 checksum=5368868808138
+K11_PhiloxRealFRange   k=0    median_ms=   8.5136 min_ms=   8.2997 max_ms=   8.6659 launches=21 checksum=29528299894736
+K12_VecCtor            k=0    median_ms=  20.3926 min_ms=  20.3887 max_ms=  20.3968 launches=21 checksum=2252318159036367
+K13_VecUint32          k=0    median_ms=   5.0002 min_ms=   4.9015 max_ms=   5.0136 launches=21 checksum=2250144345779851
+K14_VecRealF           k=0    median_ms=   6.1809 min_ms=   6.0542 max_ms=   6.2195 launches=21 checksum=5368837764076
+K15_VecRealD           k=0    median_ms=  39.7644 min_ms=  39.7461 max_ms=  39.7997 launches=21 checksum=5368837821570
+K16_VecSkip64          k=5    median_ms=  22.7681 min_ms=  22.3587 max_ms=  22.9440 launches=21 checksum=2253920273141418
+K17_EngUint32NoOffset  k=0    median_ms=   7.0915 min_ms=   6.9592 max_ms=   7.1025 launches=21 checksum=2253966654763867

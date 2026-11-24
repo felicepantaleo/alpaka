@@ -1,0 +1,450 @@
+== metrics-cuda.tsv: 300 rows
+bench	tree	target	kernel	registers	stack_frame	spill_stores	spill_loads	STACK	LOCAL	sass_instructions	LDL	STL	branches
+bench	0dee57950	sm75	K00_EngCtorNoOffset	18	0	0	0	0	0	80	0	0	4
+bench	0dee57950	sm75	K01_EngCtor	20	0	0	0	0	0	104	0	0	6
+bench	0dee57950	sm75	K02_EngCtorVar	20	0	0	0	0	0	104	0	0	6
+bench	0dee57950	sm75	K03_EngUint32	22	0	0	0	0	0	184	0	0	7
+bench	0dee57950	sm75	K04_EngUint64	24	0	0	0	0	0	264	0	0	9
+bench	0dee57950	sm75	K05_EngSkip	21	0	0	0	0	0	296	0	0	11
+bench	0dee57950	sm75	K06_TraitRealF	22	0	0	0	0	0	192	0	0	7
+bench	0dee57950	sm75	K07_TraitRealD	24	0	0	0	0	0	264	0	0	9
+bench	0dee57950	sm75	K08_TraitNormF	34	0	0	0	0	0	592	0	0	24
+bench	0dee57950	sm75	K09_PhiloxRealF	22	0	0	0	0	0	192	0	0	7
+bench	0dee57950	sm75	K10_PhiloxRealD	24	0	0	0	0	0	184	0	0	7
+bench	0dee57950	sm75	K11_PhiloxRealFRange	22	0	0	0	0	0	296	0	0	12
+bench	0dee57950	sm75	K12_VecCtor	19	0	0	0	0	0	96	0	0	4
+bench	0dee57950	sm75	K13_VecUint32	19	0	0	0	0	0	112	0	0	4
+bench	0dee57950	sm75	K14_VecRealF	19	0	0	0	0	0	120	0	0	4
+bench	0dee57950	sm75	K15_VecRealD	22	0	0	0	0	0	120	0	0	4
+bench	0dee57950	sm75	K16_VecSkip64	20	0	0	0	0	0	112	0	0	4
+bench	0dee57950	sm75	K17_EngUint32NoOffset	22	0	0	0	0	0	168	0	0	5
+bench	0dee57950	sm80	K00_EngCtorNoOffset	18	0	0	0	0	0	88	0	0	4
+bench	0dee57950	sm80	K01_EngCtor	20	0	0	0	0	0	112	0	0	6
+bench	0dee57950	sm80	K02_EngCtorVar	20	0	0	0	0	0	112	0	0	6
+bench	0dee57950	sm80	K03_EngUint32	20	0	0	0	0	0	192	0	0	7
+bench	0dee57950	sm80	K04_EngUint64	20	0	0	0	0	0	272	0	0	9
+bench	0dee57950	sm80	K05_EngSkip	22	0	0	0	0	0	304	0	0	11
+bench	0dee57950	sm80	K06_TraitRealF	20	0	0	0	0	0	200	0	0	7
+bench	0dee57950	sm80	K07_TraitRealD	24	0	0	0	0	0	272	0	0	9
+bench	0dee57950	sm80	K08_TraitNormF	32	32	0	0	32	0	536	6	8	22
+bench	0dee57950	sm80	K09_PhiloxRealF	20	0	0	0	0	0	200	0	0	7
+bench	0dee57950	sm80	K10_PhiloxRealD	20	0	0	0	0	0	200	0	0	7
+bench	0dee57950	sm80	K11_PhiloxRealFRange	22	0	0	0	0	0	304	0	0	12
+bench	0dee57950	sm80	K12_VecCtor	20	0	0	0	0	0	112	0	0	4
+bench	0dee57950	sm80	K13_VecUint32	20	0	0	0	0	0	120	0	0	4
+bench	0dee57950	sm80	K14_VecRealF	20	0	0	0	0	0	128	0	0	4
+bench	0dee57950	sm80	K15_VecRealD	22	0	0	0	0	0	128	0	0	4
+bench	0dee57950	sm80	K16_VecSkip64	20	0	0	0	0	0	120	0	0	4
+bench	0dee57950	sm80	K17_EngUint32NoOffset	20	0	0	0	0	0	176	0	0	5
+bench	0dee57950	sm90	K00_EngCtorNoOffset	18	0	0	0	0	0	96	0	0	4
+bench	0dee57950	sm90	K01_EngCtor	20	0	0	0	0	0	112	0	0	6
+bench	0dee57950	sm90	K02_EngCtorVar	20	0	0	0	0	0	120	0	0	6
+bench	0dee57950	sm90	K03_EngUint32	27	0	0	0	0	0	200	0	0	7
+bench	0dee57950	sm90	K04_EngUint64	28	0	0	0	0	0	280	0	0	9
+bench	0dee57950	sm90	K05_EngSkip	28	0	0	0	0	0	312	0	0	11
+bench	0dee57950	sm90	K06_TraitRealF	27	0	0	0	0	0	200	0	0	7
+bench	0dee57950	sm90	K07_TraitRealD	28	0	0	0	0	0	280	0	0	9
+bench	0dee57950	sm90	K08_TraitNormF	32	32	0	0	32	0	560	6	8	22
+bench	0dee57950	sm90	K09_PhiloxRealF	27	0	0	0	0	0	200	0	0	7
+bench	0dee57950	sm90	K10_PhiloxRealD	28	0	0	0	0	0	200	0	0	7
+bench	0dee57950	sm90	K11_PhiloxRealFRange	30	0	0	0	0	0	312	0	0	12
+bench	0dee57950	sm90	K12_VecCtor	20	0	0	0	0	0	112	0	0	4
+bench	0dee57950	sm90	K13_VecUint32	20	0	0	0	0	0	120	0	0	4
+bench	0dee57950	sm90	K14_VecRealF	18	0	0	0	0	0	136	0	0	4
+bench	0dee57950	sm90	K15_VecRealD	22	0	0	0	0	0	128	0	0	4
+bench	0dee57950	sm90	K16_VecSkip64	22	0	0	0	0	0	128	0	0	4
+bench	0dee57950	sm90	K17_EngUint32NoOffset	20	0	0	0	0	0	184	0	0	5
+bench	a83bc065f	sm75	K00_EngCtorNoOffset	18	0	0	0	0	0	80	0	0	4
+bench	a83bc065f	sm75	K01_EngCtor	27	0	0	0	0	0	184	0	0	8
+bench	a83bc065f	sm75	K02_EngCtorVar	27	0	0	0	0	0	200	0	0	8
+bench	a83bc065f	sm75	K03_EngUint32	21	0	0	0	0	0	264	0	0	9
+bench	a83bc065f	sm75	K04_EngUint64	22	0	0	0	0	0	344	0	0	11
+bench	a83bc065f	sm75	K05_EngSkip	24	0	0	0	0	0	448	0	0	15
+bench	a83bc065f	sm75	K06_TraitRealF	22	0	0	0	0	0	272	0	0	9
+bench	a83bc065f	sm75	K07_TraitRealD	24	0	0	0	0	0	344	0	0	11
+bench	a83bc065f	sm75	K08_TraitNormF	34	0	0	0	0	0	672	0	0	26
+bench	a83bc065f	sm75	K09_PhiloxRealF	22	0	0	0	0	0	272	0	0	9
+bench	a83bc065f	sm75	K10_PhiloxRealD	22	0	0	0	0	0	272	0	0	9
+bench	a83bc065f	sm75	K11_PhiloxRealFRange	24	0	0	0	0	0	280	0	0	9
+bench	a83bc065f	sm75	K12_VecCtor	19	0	0	0	0	0	96	0	0	4
+bench	a83bc065f	sm75	K13_VecUint32	19	0	0	0	0	0	112	0	0	4
+bench	a83bc065f	sm75	K14_VecRealF	19	0	0	0	0	0	136	0	0	4
+bench	a83bc065f	sm75	K15_VecRealD	23	0	0	0	0	0	136	0	0	4
+bench	a83bc065f	sm75	K16_VecSkip64	20	0	0	0	0	0	112	0	0	4
+bench	a83bc065f	sm75	K17_EngUint32NoOffset	22	0	0	0	0	0	168	0	0	5
+bench	a83bc065f	sm80	K00_EngCtorNoOffset	18	0	0	0	0	0	88	0	0	4
+bench	a83bc065f	sm80	K01_EngCtor	24	0	0	0	0	0	192	0	0	8
+bench	a83bc065f	sm80	K02_EngCtorVar	25	0	0	0	0	0	208	0	0	8
+bench	a83bc065f	sm80	K03_EngUint32	20	0	0	0	0	0	272	0	0	9
+bench	a83bc065f	sm80	K04_EngUint64	20	0	0	0	0	0	352	0	0	11
+bench	a83bc065f	sm80	K05_EngSkip	22	0	0	0	0	0	456	0	0	15
+bench	a83bc065f	sm80	K06_TraitRealF	22	0	0	0	0	0	280	0	0	9
+bench	a83bc065f	sm80	K07_TraitRealD	22	0	0	0	0	0	352	0	0	11
+bench	a83bc065f	sm80	K08_TraitNormF	32	32	0	0	32	0	616	6	8	24
+bench	a83bc065f	sm80	K09_PhiloxRealF	22	0	0	0	0	0	280	0	0	9
+bench	a83bc065f	sm80	K10_PhiloxRealD	22	0	0	0	0	0	280	0	0	9
+bench	a83bc065f	sm80	K11_PhiloxRealFRange	22	0	0	0	0	0	288	0	0	9
+bench	a83bc065f	sm80	K12_VecCtor	20	0	0	0	0	0	112	0	0	4
+bench	a83bc065f	sm80	K13_VecUint32	20	0	0	0	0	0	120	0	0	4
+bench	a83bc065f	sm80	K14_VecRealF	20	0	0	0	0	0	144	0	0	4
+bench	a83bc065f	sm80	K15_VecRealD	26	0	0	0	0	0	144	0	0	4
+bench	a83bc065f	sm80	K16_VecSkip64	20	0	0	0	0	0	120	0	0	4
+bench	a83bc065f	sm80	K17_EngUint32NoOffset	20	0	0	0	0	0	176	0	0	5
+bench	a83bc065f	sm90	K00_EngCtorNoOffset	18	0	0	0	0	0	96	0	0	4
+bench	a83bc065f	sm90	K01_EngCtor	23	0	0	0	0	0	200	0	0	8
+bench	a83bc065f	sm90	K02_EngCtorVar	24	0	0	0	0	0	208	0	0	8
+bench	a83bc065f	sm90	K03_EngUint32	26	0	0	0	0	0	280	0	0	9
+bench	a83bc065f	sm90	K04_EngUint64	28	0	0	0	0	0	352	0	0	11
+bench	a83bc065f	sm90	K05_EngSkip	20	0	0	0	0	0	472	0	0	15
+bench	a83bc065f	sm90	K06_TraitRealF	26	0	0	0	0	0	288	0	0	9
+bench	a83bc065f	sm90	K07_TraitRealD	30	0	0	0	0	0	360	0	0	11
+bench	a83bc065f	sm90	K08_TraitNormF	32	32	0	0	32	0	632	6	8	24
+bench	a83bc065f	sm90	K09_PhiloxRealF	26	0	0	0	0	0	288	0	0	9
+bench	a83bc065f	sm90	K10_PhiloxRealD	30	0	0	0	0	0	288	0	0	9
+bench	a83bc065f	sm90	K11_PhiloxRealFRange	28	0	0	0	0	0	296	0	0	9
+bench	a83bc065f	sm90	K12_VecCtor	20	0	0	0	0	0	112	0	0	4
+bench	a83bc065f	sm90	K13_VecUint32	20	0	0	0	0	0	120	0	0	4
+bench	a83bc065f	sm90	K14_VecRealF	20	0	0	0	0	0	144	0	0	4
+bench	a83bc065f	sm90	K15_VecRealD	24	0	0	0	0	0	144	0	0	4
+bench	a83bc065f	sm90	K16_VecSkip64	22	0	0	0	0	0	128	0	0	4
+bench	a83bc065f	sm90	K17_EngUint32NoOffset	20	0	0	0	0	0	184	0	0	5
+bench	develop	sm75	K00_EngCtorNoOffset	20	0	0	0	0	0	88	0	0	4
+bench	develop	sm75	K01_EngCtor	20	0	0	0	0	0	104	0	0	4
+bench	develop	sm75	K02_EngCtorVar	21	0	0	0	0	0	104	0	0	4
+bench	develop	sm75	K03_EngUint32	21	0	0	0	0	0	192	0	0	5
+bench	develop	sm75	K04_EngUint64	20	0	0	0	0	0	280	0	0	7
+bench	develop	sm75	K05_EngSkip	21	0	0	0	0	0	224	0	0	7
+bench	develop	sm75	K06_TraitRealF	21	0	0	0	0	0	192	0	0	5
+bench	develop	sm75	K07_TraitRealD	22	0	0	0	0	0	280	0	0	7
+bench	develop	sm75	K08_TraitNormF	34	0	0	0	0	0	600	0	0	22
+bench	develop	sm75	K09_PhiloxRealF	20	0	0	0	0	0	192	0	0	5
+bench	develop	sm75	K10_PhiloxRealD	35	0	0	0	0	0	304	0	0	13
+bench	develop	sm75	K11_PhiloxRealFRange	22	0	0	0	0	0	200	0	0	5
+bench	develop	sm75	K12_VecCtor	19	0	0	0	0	0	112	0	0	4
+bench	develop	sm75	K13_VecUint32	20	0	0	0	0	0	120	0	0	4
+bench	develop	sm75	K14_VecRealF	21	0	0	0	0	0	136	0	0	4
+bench	develop	sm75	K15_VecRealD	22	0	0	0	0	0	136	0	0	4
+bench	develop	sm75	K16_VecSkip64	24	0	0	0	0	0	144	0	0	4
+bench	develop	sm75	K17_EngUint32NoOffset	20	0	0	0	0	0	184	0	0	5
+bench	develop	sm80	K00_EngCtorNoOffset	20	0	0	0	0	0	96	0	0	4
+bench	develop	sm80	K01_EngCtor	20	0	0	0	0	0	112	0	0	4
+bench	develop	sm80	K02_EngCtorVar	20	0	0	0	0	0	112	0	0	4
+bench	develop	sm80	K03_EngUint32	20	0	0	0	0	0	200	0	0	5
+bench	develop	sm80	K04_EngUint64	22	0	0	0	0	0	280	0	0	7
+bench	develop	sm80	K05_EngSkip	21	0	0	0	0	0	232	0	0	7
+bench	develop	sm80	K06_TraitRealF	20	0	0	0	0	0	208	0	0	5
+bench	develop	sm80	K07_TraitRealD	24	0	0	0	0	0	288	0	0	7
+bench	develop	sm80	K08_TraitNormF	32	32	0	0	32	0	552	6	8	20
+bench	develop	sm80	K09_PhiloxRealF	20	0	0	0	0	0	208	0	0	5
+bench	develop	sm80	K10_PhiloxRealD	32	0	0	0	0	0	304	0	0	13
+bench	develop	sm80	K11_PhiloxRealFRange	20	0	0	0	0	0	208	0	0	5
+bench	develop	sm80	K12_VecCtor	17	0	0	0	0	0	128	0	0	4
+bench	develop	sm80	K13_VecUint32	18	0	0	0	0	0	128	0	0	4
+bench	develop	sm80	K14_VecRealF	19	0	0	0	0	0	144	0	0	4
+bench	develop	sm80	K15_VecRealD	24	0	0	0	0	0	144	0	0	4
+bench	develop	sm80	K16_VecSkip64	21	0	0	0	0	0	152	0	0	4
+bench	develop	sm80	K17_EngUint32NoOffset	20	0	0	0	0	0	192	0	0	5
+bench	develop	sm90	K00_EngCtorNoOffset	20	0	0	0	0	0	104	0	0	4
+bench	develop	sm90	K01_EngCtor	20	0	0	0	0	0	112	0	0	4
+bench	develop	sm90	K02_EngCtorVar	20	0	0	0	0	0	112	0	0	4
+bench	develop	sm90	K03_EngUint32	20	0	0	0	0	0	208	0	0	5
+bench	develop	sm90	K04_EngUint64	22	0	0	0	0	0	288	0	0	7
+bench	develop	sm90	K05_EngSkip	22	0	0	0	0	0	240	0	0	7
+bench	develop	sm90	K06_TraitRealF	20	0	0	0	0	0	208	0	0	5
+bench	develop	sm90	K07_TraitRealD	24	0	0	0	0	0	288	0	0	7
+bench	develop	sm90	K08_TraitNormF	32	32	0	0	32	0	552	6	8	20
+bench	develop	sm90	K09_PhiloxRealF	20	0	0	0	0	0	208	0	0	5
+bench	develop	sm90	K10_PhiloxRealD	32	0	0	0	0	0	312	0	0	13
+bench	develop	sm90	K11_PhiloxRealFRange	20	0	0	0	0	0	208	0	0	5
+bench	develop	sm90	K12_VecCtor	17	0	0	0	0	0	128	0	0	4
+bench	develop	sm90	K13_VecUint32	18	0	0	0	0	0	128	0	0	4
+bench	develop	sm90	K14_VecRealF	20	0	0	0	0	0	144	0	0	4
+bench	develop	sm90	K15_VecRealD	22	0	0	0	0	0	144	0	0	4
+bench	develop	sm90	K16_VecSkip64	23	0	0	0	0	0	152	0	0	4
+bench	develop	sm90	K17_EngUint32NoOffset	20	0	0	0	0	0	200	0	0	5
+bench	head	sm75	K00_EngCtorNoOffset	18	0	0	0	0	0	80	0	0	4
+bench	head	sm75	K01_EngCtor	20	0	0	0	0	0	104	0	0	6
+bench	head	sm75	K02_EngCtorVar	20	0	0	0	0	0	104	0	0	6
+bench	head	sm75	K03_EngUint32	22	0	0	0	0	0	184	0	0	7
+bench	head	sm75	K04_EngUint64	24	0	0	0	0	0	264	0	0	9
+bench	head	sm75	K05_EngSkip	21	0	0	0	0	0	296	0	0	11
+bench	head	sm75	K06_TraitRealF	22	0	0	0	0	0	192	0	0	7
+bench	head	sm75	K07_TraitRealD	24	0	0	0	0	0	264	0	0	9
+bench	head	sm75	K08_TraitNormF	34	0	0	0	0	0	592	0	0	24
+bench	head	sm75	K09_PhiloxRealF	22	0	0	0	0	0	192	0	0	7
+bench	head	sm75	K10_PhiloxRealD	24	0	0	0	0	0	184	0	0	7
+bench	head	sm75	K11_PhiloxRealFRange	22	0	0	0	0	0	296	0	0	12
+bench	head	sm75	K12_VecCtor	19	0	0	0	0	0	96	0	0	4
+bench	head	sm75	K13_VecUint32	19	0	0	0	0	0	112	0	0	4
+bench	head	sm75	K14_VecRealF	19	0	0	0	0	0	120	0	0	4
+bench	head	sm75	K15_VecRealD	22	0	0	0	0	0	120	0	0	4
+bench	head	sm75	K16_VecSkip64	20	0	0	0	0	0	112	0	0	4
+bench	head	sm75	K17_EngUint32NoOffset	22	0	0	0	0	0	168	0	0	5
+bench	head	sm80	K00_EngCtorNoOffset	18	0	0	0	0	0	88	0	0	4
+bench	head	sm80	K01_EngCtor	20	0	0	0	0	0	112	0	0	6
+bench	head	sm80	K02_EngCtorVar	20	0	0	0	0	0	112	0	0	6
+bench	head	sm80	K03_EngUint32	20	0	0	0	0	0	192	0	0	7
+bench	head	sm80	K04_EngUint64	20	0	0	0	0	0	272	0	0	9
+bench	head	sm80	K05_EngSkip	22	0	0	0	0	0	304	0	0	11
+bench	head	sm80	K06_TraitRealF	20	0	0	0	0	0	200	0	0	7
+bench	head	sm80	K07_TraitRealD	24	0	0	0	0	0	272	0	0	9
+bench	head	sm80	K08_TraitNormF	32	32	0	0	32	0	536	6	8	22
+bench	head	sm80	K09_PhiloxRealF	20	0	0	0	0	0	200	0	0	7
+bench	head	sm80	K10_PhiloxRealD	20	0	0	0	0	0	200	0	0	7
+bench	head	sm80	K11_PhiloxRealFRange	22	0	0	0	0	0	304	0	0	12
+bench	head	sm80	K12_VecCtor	20	0	0	0	0	0	112	0	0	4
+bench	head	sm80	K13_VecUint32	20	0	0	0	0	0	120	0	0	4
+bench	head	sm80	K14_VecRealF	20	0	0	0	0	0	128	0	0	4
+bench	head	sm80	K15_VecRealD	22	0	0	0	0	0	128	0	0	4
+bench	head	sm80	K16_VecSkip64	20	0	0	0	0	0	120	0	0	4
+bench	head	sm80	K17_EngUint32NoOffset	20	0	0	0	0	0	176	0	0	5
+bench	head	sm90	K00_EngCtorNoOffset	18	0	0	0	0	0	96	0	0	4
+bench	head	sm90	K01_EngCtor	20	0	0	0	0	0	112	0	0	6
+bench	head	sm90	K02_EngCtorVar	20	0	0	0	0	0	120	0	0	6
+bench	head	sm90	K03_EngUint32	27	0	0	0	0	0	200	0	0	7
+bench	head	sm90	K04_EngUint64	28	0	0	0	0	0	280	0	0	9
+bench	head	sm90	K05_EngSkip	28	0	0	0	0	0	312	0	0	11
+bench	head	sm90	K06_TraitRealF	27	0	0	0	0	0	200	0	0	7
+bench	head	sm90	K07_TraitRealD	28	0	0	0	0	0	280	0	0	9
+bench	head	sm90	K08_TraitNormF	32	32	0	0	32	0	560	6	8	22
+bench	head	sm90	K09_PhiloxRealF	27	0	0	0	0	0	200	0	0	7
+bench	head	sm90	K10_PhiloxRealD	28	0	0	0	0	0	200	0	0	7
+bench	head	sm90	K11_PhiloxRealFRange	30	0	0	0	0	0	312	0	0	12
+bench	head	sm90	K12_VecCtor	20	0	0	0	0	0	112	0	0	4
+bench	head	sm90	K13_VecUint32	20	0	0	0	0	0	120	0	0	4
+bench	head	sm90	K14_VecRealF	18	0	0	0	0	0	136	0	0	4
+bench	head	sm90	K15_VecRealD	22	0	0	0	0	0	128	0	0	4
+bench	head	sm90	K16_VecSkip64	22	0	0	0	0	0	128	0	0	4
+bench	head	sm90	K17_EngUint32NoOffset	20	0	0	0	0	0	184	0	0	5
+bench2	0dee57950	sm75	R0_RealFRange	22	0	0	0	0	0	304	0	0	12
+bench2	0dee57950	sm75	R1_RealDRange	30	0	0	0	0	0	304	0	0	12
+bench2	0dee57950	sm75	R2_VecRealFRange	21	0	0	0	0	0	240	0	0	8
+bench2	0dee57950	sm75	R3_VecRealDRange	31	0	0	0	0	0	248	0	0	8
+bench2	0dee57950	sm75	R4_VecRealDUnit	22	0	0	0	0	0	120	0	0	4
+bench2	0dee57950	sm75	R5_RealFMember	20	0	0	0	0	0	296	0	0	12
+bench2	0dee57950	sm75	R6_VecRealDMember	25	0	0	0	0	0	232	0	0	8
+bench2	0dee57950	sm80	R0_RealFRange	22	0	0	0	0	0	304	0	0	12
+bench2	0dee57950	sm80	R1_RealDRange	30	0	0	0	0	0	312	0	0	12
+bench2	0dee57950	sm80	R2_VecRealFRange	22	0	0	0	0	0	248	0	0	8
+bench2	0dee57950	sm80	R3_VecRealDRange	32	0	0	0	0	0	248	0	0	8
+bench2	0dee57950	sm80	R4_VecRealDUnit	22	0	0	0	0	0	128	0	0	4
+bench2	0dee57950	sm80	R5_RealFMember	19	0	0	0	0	0	296	0	0	12
+bench2	0dee57950	sm80	R6_VecRealDMember	26	0	0	0	0	0	240	0	0	8
+bench2	0dee57950	sm90	R0_RealFRange	30	0	0	0	0	0	320	0	0	12
+bench2	0dee57950	sm90	R1_RealDRange	26	0	0	0	0	0	336	0	0	12
+bench2	0dee57950	sm90	R2_VecRealFRange	20	0	0	0	0	0	256	0	0	8
+bench2	0dee57950	sm90	R3_VecRealDRange	32	0	0	0	0	0	256	0	0	8
+bench2	0dee57950	sm90	R4_VecRealDUnit	22	0	0	0	0	0	136	0	0	4
+bench2	0dee57950	sm90	R5_RealFMember	26	0	0	0	0	0	312	0	0	12
+bench2	0dee57950	sm90	R6_VecRealDMember	28	0	0	0	0	0	248	0	0	8
+bench2	a83bc065f	sm75	R0_RealFRange	24	0	0	0	0	0	280	0	0	9
+bench2	a83bc065f	sm75	R1_RealDRange	30	0	0	0	0	0	288	0	0	9
+bench2	a83bc065f	sm75	R2_VecRealFRange	21	0	0	0	0	0	144	0	0	4
+bench2	a83bc065f	sm75	R3_VecRealDRange	31	0	0	0	0	0	152	0	0	4
+bench2	a83bc065f	sm75	R4_VecRealDUnit	23	0	0	0	0	0	136	0	0	4
+bench2	a83bc065f	sm75	R5_RealFMember	22	0	0	0	0	0	272	0	0	9
+bench2	a83bc065f	sm75	R6_VecRealDMember	25	0	0	0	0	0	144	0	0	4
+bench2	a83bc065f	sm80	R0_RealFRange	22	0	0	0	0	0	288	0	0	9
+bench2	a83bc065f	sm80	R1_RealDRange	30	0	0	0	0	0	296	0	0	9
+bench2	a83bc065f	sm80	R2_VecRealFRange	22	0	0	0	0	0	152	0	0	4
+bench2	a83bc065f	sm80	R3_VecRealDRange	32	0	0	0	0	0	160	0	0	4
+bench2	a83bc065f	sm80	R4_VecRealDUnit	26	0	0	0	0	0	144	0	0	4
+bench2	a83bc065f	sm80	R5_RealFMember	22	0	0	0	0	0	280	0	0	9
+bench2	a83bc065f	sm80	R6_VecRealDMember	26	0	0	0	0	0	152	0	0	4
+bench2	a83bc065f	sm90	R0_RealFRange	28	0	0	0	0	0	296	0	0	9
+bench2	a83bc065f	sm90	R1_RealDRange	28	0	0	0	0	0	312	0	0	9
+bench2	a83bc065f	sm90	R2_VecRealFRange	20	0	0	0	0	0	160	0	0	4
+bench2	a83bc065f	sm90	R3_VecRealDRange	32	0	0	0	0	0	168	0	0	4
+bench2	a83bc065f	sm90	R4_VecRealDUnit	24	0	0	0	0	0	152	0	0	4
+bench2	a83bc065f	sm90	R5_RealFMember	26	0	0	0	0	0	296	0	0	9
+bench2	a83bc065f	sm90	R6_VecRealDMember	28	0	0	0	0	0	160	0	0	4
+bench2	develop	sm75	R0_RealFRange	22	0	0	0	0	0	200	0	0	5
+bench2	develop	sm75	R1_RealDRange	39	0	0	0	0	0	304	0	0	13
+bench2	develop	sm75	R2_VecRealFRange	21	0	0	0	0	0	136	0	0	4
+bench2	develop	sm75	R3_VecRealDRange	26	0	0	0	0	0	136	0	0	4
+bench2	develop	sm75	R4_VecRealDUnit	22	0	0	0	0	0	136	0	0	4
+bench2	develop	sm75	R5_RealFMember	21	0	0	0	0	0	200	0	0	5
+bench2	develop	sm75	R6_VecRealDMember	24	0	0	0	0	0	136	0	0	4
+bench2	develop	sm80	R0_RealFRange	20	0	0	0	0	0	208	0	0	5
+bench2	develop	sm80	R1_RealDRange	36	0	0	0	0	0	312	0	0	13
+bench2	develop	sm80	R2_VecRealFRange	21	0	0	0	0	0	144	0	0	4
+bench2	develop	sm80	R3_VecRealDRange	28	0	0	0	0	0	144	0	0	4
+bench2	develop	sm80	R4_VecRealDUnit	24	0	0	0	0	0	144	0	0	4
+bench2	develop	sm80	R5_RealFMember	20	0	0	0	0	0	208	0	0	5
+bench2	develop	sm80	R6_VecRealDMember	24	0	0	0	0	0	144	0	0	4
+bench2	develop	sm90	R0_RealFRange	20	0	0	0	0	0	216	0	0	5
+bench2	develop	sm90	R1_RealDRange	37	0	0	0	0	0	320	0	0	13
+bench2	develop	sm90	R2_VecRealFRange	20	0	0	0	0	0	152	0	0	4
+bench2	develop	sm90	R3_VecRealDRange	26	0	0	0	0	0	152	0	0	4
+bench2	develop	sm90	R4_VecRealDUnit	22	0	0	0	0	0	152	0	0	4
+bench2	develop	sm90	R5_RealFMember	20	0	0	0	0	0	216	0	0	5
+bench2	develop	sm90	R6_VecRealDMember	24	0	0	0	0	0	152	0	0	4
+bench2	head	sm75	R0_RealFRange	22	0	0	0	0	0	296	0	0	12
+bench2	head	sm75	R1_RealDRange	30	0	0	0	0	0	304	0	0	12
+bench2	head	sm75	R2_VecRealFRange	21	0	0	0	0	0	240	0	0	8
+bench2	head	sm75	R3_VecRealDRange	31	0	0	0	0	0	240	0	0	8
+bench2	head	sm75	R4_VecRealDUnit	22	0	0	0	0	0	120	0	0	4
+bench2	head	sm75	R5_RealFMember	20	0	0	0	0	0	296	0	0	12
+bench2	head	sm75	R6_VecRealDMember	25	0	0	0	0	0	232	0	0	8
+bench2	head	sm80	R0_RealFRange	22	0	0	0	0	0	304	0	0	12
+bench2	head	sm80	R1_RealDRange	30	0	0	0	0	0	312	0	0	12
+bench2	head	sm80	R2_VecRealFRange	22	0	0	0	0	0	248	0	0	8
+bench2	head	sm80	R3_VecRealDRange	32	0	0	0	0	0	248	0	0	8
+bench2	head	sm80	R4_VecRealDUnit	22	0	0	0	0	0	128	0	0	4
+bench2	head	sm80	R5_RealFMember	19	0	0	0	0	0	296	0	0	12
+bench2	head	sm80	R6_VecRealDMember	26	0	0	0	0	0	240	0	0	8
+bench2	head	sm90	R0_RealFRange	30	0	0	0	0	0	320	0	0	12
+bench2	head	sm90	R1_RealDRange	26	0	0	0	0	0	336	0	0	12
+bench2	head	sm90	R2_VecRealFRange	20	0	0	0	0	0	256	0	0	8
+bench2	head	sm90	R3_VecRealDRange	32	0	0	0	0	0	256	0	0	8
+bench2	head	sm90	R4_VecRealDUnit	22	0	0	0	0	0	136	0	0	4
+bench2	head	sm90	R5_RealFMember	26	0	0	0	0	0	312	0	0	12
+bench2	head	sm90	R6_VecRealDMember	28	0	0	0	0	0	248	0	0	8
+
+== metrics-hip.tsv: 144 rows
+bench	tree	target	kernel	VGPRs	SGPRs	ScratchSize	VGPR_spill	SGPR_spill	occupancy
+bench	0dee57950	gfx1100	K00_EngCtorNoOffset	17	18	0	0	0	16
+bench	0dee57950	gfx1100	K01_EngCtor	16	18	0	0	0	16
+bench	0dee57950	gfx1100	K02_EngCtorVar	18	18	0	0	0	16
+bench	0dee57950	gfx1100	K03_EngUint32	19	18	0	0	0	16
+bench	0dee57950	gfx1100	K04_EngUint64	21	18	0	0	0	16
+bench	0dee57950	gfx1100	K05_EngSkip	20	18	0	0	0	16
+bench	0dee57950	gfx1100	K06_TraitRealF	19	18	0	0	0	16
+bench	0dee57950	gfx1100	K07_TraitRealD	21	18	0	0	0	16
+bench	0dee57950	gfx1100	K08_TraitNormF	37	18	0	0	0	16
+bench	0dee57950	gfx1100	K09_PhiloxRealF	20	18	0	0	0	16
+bench	0dee57950	gfx1100	K10_PhiloxRealD	21	18	0	0	0	16
+bench	0dee57950	gfx1100	K11_PhiloxRealFRange	23	18	0	0	0	16
+bench	0dee57950	gfx1100	K12_VecCtor	17	18	0	0	0	16
+bench	0dee57950	gfx1100	K13_VecUint32	18	18	0	0	0	16
+bench	0dee57950	gfx1100	K14_VecRealF	18	18	0	0	0	16
+bench	0dee57950	gfx1100	K15_VecRealD	19	18	0	0	0	16
+bench	0dee57950	gfx1100	K16_VecSkip64	20	18	0	0	0	16
+bench	0dee57950	gfx1100	K17_EngUint32NoOffset	16	18	0	0	0	16
+bench	0dee57950	gfx90a	K00_EngCtorNoOffset	26	33	0	0	0	8
+bench	0dee57950	gfx90a	K01_EngCtor	18	22	0	0	0	8
+bench	0dee57950	gfx90a	K02_EngCtorVar	20	20	0	0	0	8
+bench	0dee57950	gfx90a	K03_EngUint32	20	22	0	0	0	8
+bench	0dee57950	gfx90a	K04_EngUint64	24	22	0	0	0	8
+bench	0dee57950	gfx90a	K05_EngSkip	22	26	0	0	0	8
+bench	0dee57950	gfx90a	K06_TraitRealF	20	22	0	0	0	8
+bench	0dee57950	gfx90a	K07_TraitRealD	24	22	0	0	0	8
+bench	0dee57950	gfx90a	K08_TraitNormF	42	42	0	0	0	8
+bench	0dee57950	gfx90a	K09_PhiloxRealF	22	23	0	0	0	8
+bench	0dee57950	gfx90a	K10_PhiloxRealD	24	23	0	0	0	8
+bench	0dee57950	gfx90a	K11_PhiloxRealFRange	24	25	0	0	0	8
+bench	0dee57950	gfx90a	K12_VecCtor	18	21	0	0	0	8
+bench	0dee57950	gfx90a	K13_VecUint32	20	21	0	0	0	8
+bench	0dee57950	gfx90a	K14_VecRealF	20	22	0	0	0	8
+bench	0dee57950	gfx90a	K15_VecRealD	22	22	0	0	0	8
+bench	0dee57950	gfx90a	K16_VecSkip64	22	21	0	0	0	8
+bench	0dee57950	gfx90a	K17_EngUint32NoOffset	22	21	0	0	0	8
+bench	a83bc065f	gfx1100	K00_EngCtorNoOffset	17	18	0	0	0	16
+bench	a83bc065f	gfx1100	K01_EngCtor	21	18	0	0	0	16
+bench	a83bc065f	gfx1100	K02_EngCtorVar	24	18	0	0	0	16
+bench	a83bc065f	gfx1100	K03_EngUint32	19	18	0	0	0	16
+bench	a83bc065f	gfx1100	K04_EngUint64	22	18	0	0	0	16
+bench	a83bc065f	gfx1100	K05_EngSkip	24	19	0	0	0	16
+bench	a83bc065f	gfx1100	K06_TraitRealF	19	18	0	0	0	16
+bench	a83bc065f	gfx1100	K07_TraitRealD	22	18	0	0	0	16
+bench	a83bc065f	gfx1100	K08_TraitNormF	37	18	0	0	0	16
+bench	a83bc065f	gfx1100	K09_PhiloxRealF	23	18	0	0	0	16
+bench	a83bc065f	gfx1100	K10_PhiloxRealD	24	18	0	0	0	16
+bench	a83bc065f	gfx1100	K11_PhiloxRealFRange	23	18	0	0	0	16
+bench	a83bc065f	gfx1100	K12_VecCtor	17	18	0	0	0	16
+bench	a83bc065f	gfx1100	K13_VecUint32	18	18	0	0	0	16
+bench	a83bc065f	gfx1100	K14_VecRealF	18	18	0	0	0	16
+bench	a83bc065f	gfx1100	K15_VecRealD	19	18	0	0	0	16
+bench	a83bc065f	gfx1100	K16_VecSkip64	20	18	0	0	0	16
+bench	a83bc065f	gfx1100	K17_EngUint32NoOffset	16	18	0	0	0	16
+bench	a83bc065f	gfx90a	K00_EngCtorNoOffset	26	33	0	0	0	8
+bench	a83bc065f	gfx90a	K01_EngCtor	22	25	0	0	0	8
+bench	a83bc065f	gfx90a	K02_EngCtorVar	26	25	0	0	0	8
+bench	a83bc065f	gfx90a	K03_EngUint32	20	22	0	0	0	8
+bench	a83bc065f	gfx90a	K04_EngUint64	24	22	0	0	0	8
+bench	a83bc065f	gfx90a	K05_EngSkip	26	27	0	0	0	8
+bench	a83bc065f	gfx90a	K06_TraitRealF	20	22	0	0	0	8
+bench	a83bc065f	gfx90a	K07_TraitRealD	24	22	0	0	0	8
+bench	a83bc065f	gfx90a	K08_TraitNormF	42	42	0	0	0	8
+bench	a83bc065f	gfx90a	K09_PhiloxRealF	26	23	0	0	0	8
+bench	a83bc065f	gfx90a	K10_PhiloxRealD	26	23	0	0	0	8
+bench	a83bc065f	gfx90a	K11_PhiloxRealFRange	26	23	0	0	0	8
+bench	a83bc065f	gfx90a	K12_VecCtor	18	21	0	0	0	8
+bench	a83bc065f	gfx90a	K13_VecUint32	20	21	0	0	0	8
+bench	a83bc065f	gfx90a	K14_VecRealF	22	22	0	0	0	8
+bench	a83bc065f	gfx90a	K15_VecRealD	22	22	0	0	0	8
+bench	a83bc065f	gfx90a	K16_VecSkip64	22	21	0	0	0	8
+bench	a83bc065f	gfx90a	K17_EngUint32NoOffset	22	21	0	0	0	8
+bench	develop	gfx1100	K00_EngCtorNoOffset	15	18	0	0	0	16
+bench	develop	gfx1100	K01_EngCtor	15	18	0	0	0	16
+bench	develop	gfx1100	K02_EngCtorVar	16	18	0	0	0	16
+bench	develop	gfx1100	K03_EngUint32	16	18	0	0	0	16
+bench	develop	gfx1100	K04_EngUint64	19	18	0	0	0	16
+bench	develop	gfx1100	K05_EngSkip	16	18	0	0	0	16
+bench	develop	gfx1100	K06_TraitRealF	16	18	0	0	0	16
+bench	develop	gfx1100	K07_TraitRealD	19	18	0	0	0	16
+bench	develop	gfx1100	K08_TraitNormF	37	18	0	0	0	16
+bench	develop	gfx1100	K09_PhiloxRealF	17	18	0	0	0	16
+bench	develop	gfx1100	K10_PhiloxRealD	24	18	0	0	0	16
+bench	develop	gfx1100	K11_PhiloxRealFRange	18	18	0	0	0	16
+bench	develop	gfx1100	K12_VecCtor	13	18	0	0	0	16
+bench	develop	gfx1100	K13_VecUint32	14	18	0	0	0	16
+bench	develop	gfx1100	K14_VecRealF	14	18	0	0	0	16
+bench	develop	gfx1100	K15_VecRealD	16	18	0	0	0	16
+bench	develop	gfx1100	K16_VecSkip64	15	18	0	0	0	16
+bench	develop	gfx1100	K17_EngUint32NoOffset	17	18	0	0	0	16
+bench	develop	gfx90a	K00_EngCtorNoOffset	14	19	0	0	0	8
+bench	develop	gfx90a	K01_EngCtor	14	19	0	0	0	8
+bench	develop	gfx90a	K02_EngCtorVar	16	18	0	0	0	8
+bench	develop	gfx90a	K03_EngUint32	16	19	0	0	0	8
+bench	develop	gfx90a	K04_EngUint64	20	19	0	0	0	8
+bench	develop	gfx90a	K05_EngSkip	18	21	0	0	0	8
+bench	develop	gfx90a	K06_TraitRealF	16	19	0	0	0	8
+bench	develop	gfx90a	K07_TraitRealD	20	19	0	0	0	8
+bench	develop	gfx90a	K08_TraitNormF	42	40	0	0	0	8
+bench	develop	gfx90a	K09_PhiloxRealF	16	19	0	0	0	8
+bench	develop	gfx90a	K10_PhiloxRealD	24	21	0	0	0	8
+bench	develop	gfx90a	K11_PhiloxRealFRange	18	20	0	0	0	8
+bench	develop	gfx90a	K12_VecCtor	14	19	0	0	0	8
+bench	develop	gfx90a	K13_VecUint32	14	19	0	0	0	8
+bench	develop	gfx90a	K14_VecRealF	14	20	0	0	0	8
+bench	develop	gfx90a	K15_VecRealD	16	21	0	0	0	8
+bench	develop	gfx90a	K16_VecSkip64	16	20	0	0	0	8
+bench	develop	gfx90a	K17_EngUint32NoOffset	16	19	0	0	0	8
+bench	head	gfx1100	K00_EngCtorNoOffset	17	18	0	0	0	16
+bench	head	gfx1100	K01_EngCtor	16	18	0	0	0	16
+bench	head	gfx1100	K02_EngCtorVar	18	18	0	0	0	16
+bench	head	gfx1100	K03_EngUint32	19	18	0	0	0	16
+bench	head	gfx1100	K04_EngUint64	21	18	0	0	0	16
+bench	head	gfx1100	K05_EngSkip	20	18	0	0	0	16
+bench	head	gfx1100	K06_TraitRealF	19	18	0	0	0	16
+bench	head	gfx1100	K07_TraitRealD	21	18	0	0	0	16
+bench	head	gfx1100	K08_TraitNormF	37	18	0	0	0	16
+bench	head	gfx1100	K09_PhiloxRealF	20	18	0	0	0	16
+bench	head	gfx1100	K10_PhiloxRealD	21	18	0	0	0	16
+bench	head	gfx1100	K11_PhiloxRealFRange	23	18	0	0	0	16
+bench	head	gfx1100	K12_VecCtor	17	18	0	0	0	16
+bench	head	gfx1100	K13_VecUint32	18	18	0	0	0	16
+bench	head	gfx1100	K14_VecRealF	18	18	0	0	0	16
+bench	head	gfx1100	K15_VecRealD	19	18	0	0	0	16
+bench	head	gfx1100	K16_VecSkip64	20	18	0	0	0	16
+bench	head	gfx1100	K17_EngUint32NoOffset	16	18	0	0	0	16
+bench	head	gfx90a	K00_EngCtorNoOffset	26	33	0	0	0	8
+bench	head	gfx90a	K01_EngCtor	18	22	0	0	0	8
+bench	head	gfx90a	K02_EngCtorVar	20	20	0	0	0	8
+bench	head	gfx90a	K03_EngUint32	20	22	0	0	0	8
+bench	head	gfx90a	K04_EngUint64	24	22	0	0	0	8
+bench	head	gfx90a	K05_EngSkip	22	26	0	0	0	8
+bench	head	gfx90a	K06_TraitRealF	20	22	0	0	0	8
+bench	head	gfx90a	K07_TraitRealD	24	22	0	0	0	8
+bench	head	gfx90a	K08_TraitNormF	42	42	0	0	0	8
+bench	head	gfx90a	K09_PhiloxRealF	22	23	0	0	0	8
+bench	head	gfx90a	K10_PhiloxRealD	24	23	0	0	0	8
+bench	head	gfx90a	K11_PhiloxRealFRange	24	25	0	0	0	8
+bench	head	gfx90a	K12_VecCtor	18	21	0	0	0	8
+bench	head	gfx90a	K13_VecUint32	20	21	0	0	0	8
+bench	head	gfx90a	K14_VecRealF	20	22	0	0	0	8
+bench	head	gfx90a	K15_VecRealD	22	22	0	0	0	8
+bench	head	gfx90a	K16_VecSkip64	22	21	0	0	0	8
+bench	head	gfx90a	K17_EngUint32NoOffset	22	21	0	0	0	8
+
